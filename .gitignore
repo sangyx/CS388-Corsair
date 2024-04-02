@@ -1,0 +1,5 @@
+__pycache__/
+roberta.base/
+w2v/
+*.txt
+data/
