@@ -101,7 +101,7 @@ if __name__ == "__main__":
     print("sys.argv={}".format(sys.argv))
     for i in range(len(sys.argv)):
         if sys.argv[i] == "--Dataset_Name" and i + 1 < len(sys.argv):
-            pb.Dataset_Names = [sys.argv[i + 1]]
+            pb.Dataset_Names = sys.argv[i + 1].split(",")
         if sys.argv[i] == "--Base_Model" and i + 1 < len(sys.argv):
             pb.Base_Model = sys.argv[i + 1]
         if sys.argv[i] == "--EDA" and i + 1 < len(sys.argv):
